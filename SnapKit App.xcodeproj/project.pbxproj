@@ -11,6 +11,7 @@
 		342AE00929681ED9008BD07E /* SnapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AE00829681ED9008BD07E /* SnapModel.swift */; };
 		342AE00C29682497008BD07E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 342AE00B29682497008BD07E /* Alamofire */; };
 		342AE00F296824E1008BD07E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 342AE00E296824E1008BD07E /* AlamofireImage */; };
+		342AE01129682FD5008BD07E /* SnapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AE01029682FD5008BD07E /* SnapViewModel.swift */; };
 		34593C4D296473AD008B59EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C4C296473AD008B59EC /* AppDelegate.swift */; };
 		34593C4F296473AD008B59EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C4E296473AD008B59EC /* SceneDelegate.swift */; };
 		34593C51296473AD008B59EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C50296473AD008B59EC /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		342AE00629681ED2008BD07E /* SnapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapService.swift; sourceTree = "<group>"; };
 		342AE00829681ED9008BD07E /* SnapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapModel.swift; sourceTree = "<group>"; };
+		342AE01029682FD5008BD07E /* SnapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewModel.swift; sourceTree = "<group>"; };
 		34593C49296473AD008B59EC /* SnapKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnapKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34593C4C296473AD008B59EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34593C4E296473AD008B59EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		34593C69296484EB008B59EC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				342AE01029682FD5008BD07E /* SnapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				34593C6D29648553008B59EC /* SnapViewController.swift in Sources */,
 				34593C51296473AD008B59EC /* ViewController.swift in Sources */,
+				342AE01129682FD5008BD07E /* SnapViewModel.swift in Sources */,
 				342AE00729681ED2008BD07E /* SnapService.swift in Sources */,
 				342AE00929681ED9008BD07E /* SnapModel.swift in Sources */,
 				34593C4D296473AD008B59EC /* AppDelegate.swift in Sources */,
