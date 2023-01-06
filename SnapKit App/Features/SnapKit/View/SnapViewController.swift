@@ -25,6 +25,7 @@ final class SnapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        viewModel.setDelegate(output: self)
         viewModel.fetchItems()
     }
     
@@ -42,8 +43,12 @@ final class SnapViewController: UIViewController {
     func drawDesign() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.Identifier.custom.rawValue)
+        
+        tableView.rowHeight = 200
         DispatchQueue.main.async {
             self.view.backgroundColor = .white
+            self.labelTitle.font = .boldSystemFont(ofSize: 25)
             self.labelTitle.text = "VB10"
             self.indicator.color = .red
         }
@@ -58,9 +63,11 @@ extension SnapViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = result[indexPath.row].name ?? ""
+        guard let cell : TableViewCell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.Identifier.custom.rawValue) as? TableViewCell else {
+            return UITableViewCell()
+        }
         
+        cell.saveModel(model: result[indexPath.row])
         return cell
     }
     
