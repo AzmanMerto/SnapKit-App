@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342AE00729681ED2008BD07E /* SnapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AE00629681ED2008BD07E /* SnapService.swift */; };
+		342AE00929681ED9008BD07E /* SnapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342AE00829681ED9008BD07E /* SnapModel.swift */; };
 		34593C4D296473AD008B59EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C4C296473AD008B59EC /* AppDelegate.swift */; };
 		34593C4F296473AD008B59EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C4E296473AD008B59EC /* SceneDelegate.swift */; };
 		34593C51296473AD008B59EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C50296473AD008B59EC /* ViewController.swift */; };
@@ -14,11 +16,25 @@
 		34593C56296473AE008B59EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34593C55296473AE008B59EC /* Assets.xcassets */; };
 		34593C59296473AE008B59EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34593C57296473AE008B59EC /* LaunchScreen.storyboard */; };
 		34593C6229648475008B59EC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 34593C6129648475008B59EC /* SnapKit */; };
-		34593C6429648475008B59EC /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 34593C6329648475008B59EC /* SnapKit-Dynamic */; };
 		34593C6D29648553008B59EC /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34593C6C29648553008B59EC /* SnapViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		342AE00529681C63008BD07E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		342AE00629681ED2008BD07E /* SnapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapService.swift; sourceTree = "<group>"; };
+		342AE00829681ED9008BD07E /* SnapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapModel.swift; sourceTree = "<group>"; };
 		34593C49296473AD008B59EC /* SnapKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SnapKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34593C4C296473AD008B59EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34593C4E296473AD008B59EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34593C6229648475008B59EC /* SnapKit in Frameworks */,
-				34593C6429648475008B59EC /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +134,7 @@
 		34593C6A296484EF008B59EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				342AE00829681ED9008BD07E /* SnapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +142,7 @@
 		34593C6B29648514008B59EC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				342AE00629681ED2008BD07E /* SnapService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -140,6 +157,7 @@
 				34593C45296473AD008B59EC /* Sources */,
 				34593C46296473AD008B59EC /* Frameworks */,
 				34593C47296473AD008B59EC /* Resources */,
+				342AE00529681C63008BD07E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +166,6 @@
 			name = "SnapKit App";
 			packageProductDependencies = (
 				34593C6129648475008B59EC /* SnapKit */,
-				34593C6329648475008B59EC /* SnapKit-Dynamic */,
 			);
 			productName = "SnapKit App";
 			productReference = 34593C49296473AD008B59EC /* SnapKit App.app */;
@@ -210,6 +227,8 @@
 			files = (
 				34593C6D29648553008B59EC /* SnapViewController.swift in Sources */,
 				34593C51296473AD008B59EC /* ViewController.swift in Sources */,
+				342AE00729681ED2008BD07E /* SnapService.swift in Sources */,
+				342AE00929681ED9008BD07E /* SnapModel.swift in Sources */,
 				34593C4D296473AD008B59EC /* AppDelegate.swift in Sources */,
 				34593C4F296473AD008B59EC /* SceneDelegate.swift in Sources */,
 			);
@@ -364,8 +383,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,8 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +463,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 34593C6029648475008B59EC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		34593C6329648475008B59EC /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 34593C6029648475008B59EC /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
