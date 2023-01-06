@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct Welcome {
+struct PostModel {
     let info: Info?
     let results: [Result]?
 }
